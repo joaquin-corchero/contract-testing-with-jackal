@@ -1,17 +1,15 @@
 {
-  "name": "provider-b",
+  "name": "mamal-service",
   "version": "1.0.0",
   "description": "Playground for contract testing",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jackal-tests": "jackal run http://localhost:25863 provider-b"
+    "jackal-tests": "jackal run http://localhost:25863 maml-service"
   },
   "keywords": [
-    "Contract",
-    "testing",
-    "using",
+    "Contract testing",
     "Jackal"
   ],
   "author": "Joaquin Corchero",
