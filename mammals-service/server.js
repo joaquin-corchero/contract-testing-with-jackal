@@ -25,12 +25,12 @@ router.get('/mammals', function (req, res) {
 });
 
 router.post('/mammals', function (req, res) {
-    const { name: name, diet: diet, extinct: extinct} = req.body;
-    if (!name || !era || !diet) {
+    const { name: name, diet: diet, extinct: extinct } = req.body;
+    if (!name || !diet || (extinct !== true && extinct !== false)) {
         res.sendStatus(400);
         return;
     }
 
-    mammals.push({ id: mammals.length + 1, name: name, era: era, diet: diet });
+    mammals.push({ id: mammals.length + 1, name: name, extinct: extinct, diet: diet });
     res.sendStatus(201);
 });
