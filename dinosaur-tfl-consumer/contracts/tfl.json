@@ -1,8 +1,8 @@
 {
     "dinosaur-tfl-consumer": {
         "tfl": {
-            "TFL": {
-                "Can connect to it": {
+            "tfl search": {
+                "Can get results": {
                     "request": {
                         "baseUrl": "https://api.tfl.gov.uk",
                         "path": "/journey/journeyresults/westminster/to/bank",
