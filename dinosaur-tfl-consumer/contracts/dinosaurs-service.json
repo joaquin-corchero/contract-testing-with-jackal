@@ -1,17 +1,13 @@
 {
-    "consumer-a": {
-        "provider-a": {
-            "root api": {
+    "dinosaur-tfl-consumer": {
+        "dinosaurs-service": {
+            "get dinosaurs": {
                 "The message passed is returned": {
                     "request": {
                         "baseUrl": "http://localhost:8081",
-                        "path": "/api",
-                        "query": "?message=hereisthemessage",
+                        "path": "/api/dinosaurs",
                         "method": "GET",
-                        "timeout": 1000,
-                        "headers": {
-                            "Header-Name": "some header that is sent"
-                        }
+                        "timeout": 1000
                     },
                     "response": {
                         "statusCode": 200,

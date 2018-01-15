@@ -1,12 +1,12 @@
 {
-  "name": "consumer-b",
+  "name": "dinosaur-tfl-consumer",
   "version": "1.0.0",
   "description": "Playground for contract testing",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jackal-tests": "jackal send http://localhost:25863 ./contract"
+    "jackal-tests": "jackal send http://localhost:25863 ./contracts"
   },
   "keywords": [
     "Contract testing",
@@ -15,6 +15,7 @@
   "author": "Joaquin Corchero",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "request": "^2.83.0"
   }
 }
