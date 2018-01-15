@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use('/api', router);
 app.listen(port);
 
-console.log('Provider-A listning to port ' + port);
+console.log('Dinosaur Service listning to port ' + port);
 
 router.get('/dinosaurs', function (req, res) {
     res.json(dinosaurs);
