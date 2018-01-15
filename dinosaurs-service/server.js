@@ -21,10 +21,12 @@ app.listen(port);
 console.log('Dinosaur Service listning to port ' + port);
 
 router.get('/dinosaurs', function (req, res) {
+    console.log('Get dinosaurs called');
     res.json(dinosaurs);
 });
 
 router.post('/dinosaurs', function (req, res) {
+    console.log('Post dinosaurs called');
     const { name: name, era: era, diet: diet } = req.body;
     if (!name || !era || !diet) {
         res.sendStatus(400);
