@@ -1,0 +1,31 @@
+{
+    "consumer-b": {
+        "tfl": {
+            "TFL": {
+                "Can connect to it": {
+                    "request": {
+                        "baseUrl": "https://api.tfl.gov.uk",
+                        "path": "/journey/journeyresults/westminster/to/bank",
+                        "method": "GET",
+                        "timeout": 2000,
+                        "headers": {
+                            "Header-Name": "some header that is sent"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 300,
+                        "body": {
+                            "$type": "Joi.string()",
+                            "toLocationDisambiguation": "Joi.object()",
+                            "fromLocationDisambiguation": "Joi.object()",
+                            "viaLocationDisambiguation": "Joi.object()",
+                            "recommendedMaxAgeMinutes": "Joi.number().integer()",
+                            "searchCriteria": "Joi.object()",
+                            "journeyVector": "Joi.object()"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

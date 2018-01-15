@@ -1,0 +1,27 @@
+{
+    "consumer-b": {
+        "provider-a": {
+            "root api": {
+                "The message passed is returned": {
+                    "request": {
+                        "baseUrl": "http://localhost:8081",
+                        "path": "/api",
+                        "query": "?message=hereisthemessage",
+                        "method": "GET",
+                        "timeout": 1000,
+                        "headers": {
+                            "Header-Name": "some header that is sent"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 200,
+                        "body": {
+                            "resultCount": "Joi.number().integer()",
+                            "message": "Joi.string().equal('hereisthemessage')"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
