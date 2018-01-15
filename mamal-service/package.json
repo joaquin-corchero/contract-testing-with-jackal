@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jackal-tests": "jackal run http://localhost:25863 maml-service"
+    "jackal-tests": "jackal run http://localhost:25863 mamal-service"
   },
   "keywords": [
     "Contract testing",
