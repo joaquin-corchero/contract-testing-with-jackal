@@ -1,11 +1,11 @@
 {
     "dinosaur-mammals-consumer": {
-        "dinosaurs-service": {
-            "get dinosaurs": {
-                "Dinosaurs are returned": {
+        "mammals-service": {
+            "get mammals": {
+                "Mammals are returned": {
                     "request": {
-                        "baseUrl": "http://localhost:8080",
-                        "path": "/api/dinosaurs",
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals",
                         "method": "GET",
                         "timeout": 1000
                     },
@@ -15,7 +15,7 @@
                             {
                                 "id": "Joi.number().integer()",
                                 "name": "Joi.string()",
-                                "era": "Joi.string()",
+                                "extinct": "Joi.boolean()",
                                 "diet": "Joi.string()"
                             }
                         ]
