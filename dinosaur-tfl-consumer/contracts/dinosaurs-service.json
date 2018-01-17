@@ -21,6 +21,48 @@
                         ]
                     }
                 }
+            },
+            "create dinosaur": {
+                "A dinosaur can be created": {
+                    "request": {
+                        "baseUrl": "http://localhost:8080",
+                        "path": "/api/dinosaurs",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "name": "Pepero",
+                            "era": "Triasic",
+                            "diet": "Vegetarian"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 201,
+                        "body": "Joi.string().equal('Created')"
+                    }
+                },
+                "Wrong object won't create dinosaur": {
+                    "request": {
+                        "baseUrl": "http://localhost:8080",
+                        "path": "/api/dinosaurs",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "something": "Pepero",
+                            "era": "Triasic",
+                            "diet": "Vegetarian"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 400,
+                        "body": "Joi.string().equal('Bad Request')"
+                    }
+                }
             }
         }
     }
