@@ -1,32 +1,27 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+'use strict';
 
-var app = express();
-var router = express.Router();
-var port = 8080;
+const express = require('express');
+const bodyParser = require('body-parser');
+const dinosaurs = require('./dinosaurs.json');
 
-var dinosaurs = [
-    {
-        id: 1,
-        name: 'Triceratops',
-        era: 'Jurassic',
-        diet: 'vegetarian'
-    }
-];
+const app = express();
+const port = 8080;
 
 app.use(bodyParser.json());
-app.use('/api', router);
 app.listen(port);
 
 console.log('Dinosaur Service listning to port ' + port);
 
-router.get('/dinosaurs', function (req, res) {
-    console.log('Get dinosaurs called');
+app.get('/api/dinosaurs/:id', function (req, res, next) {
+    const result = dinosaurs[req.params.id * 1];
+    res.json(result);
+});
+
+app.get('/api/dinosaurs/', function (req, res) {
     res.json(dinosaurs);
 });
 
-router.post('/dinosaurs', function (req, res) {
-    console.log('Post dinosaurs called');
+app.post('/api/dinosaurs/', function (req, res) {
     const { name: name, era: era, diet: diet } = req.body;
     if (!name || !era || !diet) {
         res.sendStatus(400);
