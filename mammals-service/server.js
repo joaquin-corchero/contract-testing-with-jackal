@@ -1,36 +1,35 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+'use strict';
 
-var app = express();
-var router = express.Router();
-var port = 8085;
+const express = require('express');
+const bodyParser = require('body-parser');
+const mammals = require('./mammals.json');
 
-var mammals = [
-    {
-        id: 1,
-        name: 'Mammoth',
-        diet: 'vegetarian',
-        extinct: true
-    }
-];
+const app = express();
+const port = 8085;
+
 
 app.use(bodyParser.json());
-app.use('/api', router);
 app.listen(port);
 
 console.log('Mammals Service listening to port ' + port);
 
-router.get('/mammals', function (req, res) {
+app.get('/api/mammals/:id', function (req, res, next) {
+    console.log('GETS HERE');
+    const result = mammals[req.params.id * 1];
+    res.json(result);
+});
+
+app.get('/api/mammals/', function (req, res) {
     res.json(mammals);
 });
 
-router.post('/mammals', function (req, res) {
-    const { name: name, diet: diet, extinct: extinct } = req.body;
+app.post('/api/mammals', function (req, res) {
+    const { familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl } = req.body;
     if (!name || !diet || (extinct !== true && extinct !== false)) {
         res.sendStatus(400);
         return;
     }
 
-    mammals.push({ id: mammals.length + 1, name: name, extinct: extinct, diet: diet });
+    mammals.push({id: mammals.length + "", familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl });
     res.sendStatus(201);
 });
