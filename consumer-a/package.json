@@ -1,5 +1,5 @@
 {
-  "name": "dinosaurs-mammals-consumer",
+  "name": "consumer a",
   "version": "1.0.0",
   "description": "Playground for contract testing",
   "main": "server.js",

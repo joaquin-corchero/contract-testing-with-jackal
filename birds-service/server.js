@@ -2,7 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const mammals = require('./mammals.json');
+const birds = require('./birds.json');
 
 const app = express();
 const port = 8085;
@@ -11,25 +11,25 @@ const port = 8085;
 app.use(bodyParser.json());
 app.listen(port);
 
-console.log('Mammals Service listening to port ' + port);
+console.log('Birds Service listening to port ' + port);
 
-app.get('/api/mammals/:id', function (req, res, next) {
+app.get('/api/birds/:id', function (req, res, next) {
     console.log('GETS HERE');
-    const result = mammals[req.params.id * 1];
+    const result = birds[req.params.id * 1];
     res.json(result);
 });
 
-app.get('/api/mammals/', function (req, res) {
-    res.json(mammals);
+app.get('/api/birds/', function (req, res) {
+    res.json(birds);
 });
 
-app.post('/api/mammals', function (req, res) {
+app.post('/api/birds', function (req, res) {
     const { familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl } = req.body;
     if (!name || !diet || (extinct !== true && extinct !== false)) {
         res.sendStatus(400);
         return;
     }
 
-    mammals.push({familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl });
+    birds.push({familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl });
     res.sendStatus(201);
 });

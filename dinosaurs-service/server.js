@@ -28,6 +28,6 @@ app.post('/api/dinosaurs/', function (req, res) {
         return;
     }
 
-    dinosaurs.push({ id: dinosaurs.length + 1, name: name, era: era, diet: diet });
+    dinosaurs.push({name: name, era: era, diet: diet });
     res.sendStatus(201);
 });
