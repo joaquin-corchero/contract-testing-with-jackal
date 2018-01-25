@@ -1,0 +1,272 @@
+[
+    {
+        "familyName": "Acrobatidae",
+        "familyCommonName": "feathertail glider",
+        "id": "990140",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=acrobatidae"
+    },
+    {
+        "familyName": "Balaenidae",
+        "familyCommonName": "right whales",
+        "id": "990410",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=balaenidae"
+    },
+    {
+        "familyName": "Balaenopteridae",
+        "familyCommonName": "baleen whales",
+        "id": "990430",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=balaenopteridae"
+    },
+    {
+        "familyName": "Bovidae",
+        "familyCommonName": "horned ruminants",
+        "id": "990390",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=bovidae"
+    },
+    {
+        "familyName": "Burramyidae",
+        "familyCommonName": "pygmy-possums",
+        "id": "990100",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=burramyidae"
+    },
+    {
+        "familyName": "Camelidae",
+        "familyCommonName": "camels",
+        "id": "990380",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=camelidae"
+    },
+    {
+        "familyName": "Canidae",
+        "familyCommonName": "dogs and foxes",
+        "id": "990330",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=canidae"
+    },
+    {
+        "familyName": "Cervidae",
+        "familyCommonName": "deer",
+        "id": "990400",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=cervidae"
+    },
+    {
+        "familyName": "Cricetidae",
+        "familyCommonName": "hamsters",
+        "id": "990294",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=cricetidae"
+    },
+    {
+        "familyName": "Dasyuridae",
+        "familyCommonName": "dasyurids",
+        "id": "990020",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=dasyuridae"
+    },
+    {
+        "familyName": "Delphinidae",
+        "familyCommonName": "dolphins",
+        "id": "990470",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=delphinidae"
+    },
+    {
+        "familyName": "Dugongidae",
+        "familyCommonName": "dugong",
+        "id": "990300",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=dugongidae"
+    },
+    {
+        "familyName": "Emballonuridae",
+        "familyCommonName": "sheathtail-bats",
+        "id": "990250",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=emballonuridae"
+    },
+    {
+        "familyName": "Equidae",
+        "familyCommonName": "horse and donkey",
+        "id": "990360",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=equidae"
+    },
+    {
+        "familyName": "Felidae",
+        "familyCommonName": "cats",
+        "id": "990340",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=felidae"
+    },
+    {
+        "familyName": "Herpestidae",
+        "familyCommonName": "mongooses",
+        "id": "990334",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=herpestidae"
+    },
+    {
+        "familyName": "Hipposideridae",
+        "familyCommonName": "leafnosed-bats",
+        "id": "990240",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=hipposideridae"
+    },
+    {
+        "familyName": "Hypsiprymnodontidae",
+        "familyCommonName": "musky rat kangaroo",
+        "id": "990160",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=hypsiprymnodontidae"
+    },
+    {
+        "familyName": "Kogiidae",
+        "familyCommonName": "pygmy sperm whales",
+        "id": "990450",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=kogiidae"
+    },
+    {
+        "familyName": "Leporidae",
+        "familyCommonName": "rabbit and hare",
+        "id": "990350",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=leporidae"
+    },
+    {
+        "familyName": "Macropodidae",
+        "familyCommonName": "wallabies, kangaroos and tree-kangaroos",
+        "id": "990180",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=macropodidae"
+    },
+    {
+        "familyName": "Megadermatidae",
+        "familyCommonName": "false vampires",
+        "id": "990220",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=megadermatidae"
+    },
+    {
+        "familyName": "Miniopteridae",
+        "familyCommonName": "bent-winged bats",
+        "id": "990270",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=miniopteridae"
+    },
+    {
+        "familyName": "Molossidae",
+        "familyCommonName": "freetail-bats",
+        "id": "990260",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=molossidae"
+    },
+    {
+        "familyName": "Muridae",
+        "familyCommonName": "rats and mice",
+        "id": "990290",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=muridae"
+    },
+    {
+        "familyName": "Mustelidae",
+        "familyCommonName": "badgers, otters, skunks, weasels",
+        "id": "990332",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=mustelidae"
+    },
+    {
+        "familyName": "Ornithorhynchidae",
+        "familyCommonName": "platypus",
+        "id": "990000",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=ornithorhynchidae"
+    },
+    {
+        "familyName": "Otariidae",
+        "familyCommonName": "eared seals",
+        "id": "990310",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=otariidae"
+    },
+    {
+        "familyName": "Peramelidae",
+        "familyCommonName": "Bandicoots",
+        "id": "990060",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=peramelidae"
+    },
+    {
+        "familyName": "Petauridae",
+        "familyCommonName": "Striped Possum and Wrist-winged Gliders",
+        "id": "990110",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=petauridae"
+    },
+    {
+        "familyName": "Phalangeridae",
+        "familyCommonName": "Brushtail Possums, Cuscuses & Scaly-tailed Possum",
+        "id": "990150",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=phalangeridae"
+    },
+    {
+        "familyName": "Phascolarctidae",
+        "familyCommonName": "Koala",
+        "id": "990080",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=phascolarctidae"
+    },
+    {
+        "familyName": "Phocidae",
+        "familyCommonName": "True Seals",
+        "id": "990320",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=phocidae"
+    },
+    {
+        "familyName": "Physeteridae",
+        "familyCommonName": "sperm whales",
+        "id": "990440",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=physeteridae"
+    },
+    {
+        "familyName": "Potoroidae",
+        "familyCommonName": "Potoroos and Bettongs",
+        "id": "990170",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=potoroidae"
+    },
+    {
+        "familyName": "Pseudocheiridae",
+        "familyCommonName": "Ringtail Possums and Greater Gliders",
+        "id": "990120",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pseudocheiridae"
+    },
+    {
+        "familyName": "Pteropodidae",
+        "familyCommonName": "Flying Foxes, Fruit Bats and Blossom-bats",
+        "id": "990210",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pteropodidae"
+    },
+    {
+        "familyName": "Rhinolophidae",
+        "familyCommonName": "Horseshoe-bats",
+        "id": "990230",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=rhinolophidae"
+    },
+    {
+        "familyName": "Sciuridae",
+        "familyCommonName": "squirrels and marmots",
+        "id": "990292",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=sciuridae"
+    },
+    {
+        "familyName": "Suidae",
+        "familyCommonName": "Pig",
+        "id": "990370",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=suidae"
+    },
+    {
+        "familyName": "Tachyglossidae",
+        "familyCommonName": "Echidnas",
+        "id": "990010",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=tachyglossidae"
+    },
+    {
+        "familyName": "Thylacomyidae",
+        "familyCommonName": "Bilbies",
+        "id": "990070",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=thylacomyidae"
+    },
+    {
+        "familyName": "Vespertilionidae",
+        "familyCommonName": "Vespertilionid Bats",
+        "id": "990280",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=vespertilionidae"
+    },
+    {
+        "familyName": "Vombatidae",
+        "familyCommonName": "Wombats",
+        "id": "990090",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=vombatidae"
+    },
+    {
+        "familyName": "Ziphiidae",
+        "familyCommonName": "beaked whales",
+        "id": "990460",
+        "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=ziphiidae"
+    }
+]
