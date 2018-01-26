@@ -49,7 +49,7 @@
                         "body": "Joi.string().equal('Created')"
                     }
                 },
-                "Wrong object won't create dinosaur": {
+                "Wrong object won't create mammal": {
                     "request": {
                         "baseUrl": "http://localhost:8085",
                         "path": "/api/mammals",
