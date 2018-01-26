@@ -1,0 +1,73 @@
+{
+    "consumer-b": {
+        "mammals-service": {
+            "get mammals": {
+                "mammals are returned paginated for v1": {
+                    "request": {
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals/0/5",
+                        "method": "GET",
+                        "timeout": 1000,
+                        "headers": {
+                            "version": 1
+                        }
+                    },
+                    "response": {
+                        "statusCode": 200,
+                        "body": {
+                            "totalNumber": "Joi.number().integer()",
+                            "data": [
+                                {
+                                    "familyName": "Joi.string()",
+                                    "familyCommonName": "Joi.string()",
+                                    "id": "Joi.string()",
+                                    "speciesUrl": "Joi.string()"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "create mammal": {
+                "A mammal can be created": {
+                    "request": {
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "familyName": "Pepero",
+                            "familyCommonName": "Pepero animalis",
+                            "speciesUrl": "http://google.com"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 201,
+                        "body": "Joi.string().equal('Created')"
+                    }
+                },
+                "Wrong object won't create dinosaur": {
+                    "request": {
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "something": "Pepero"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 400,
+                        "body": "Joi.string().equal('Bad Request')"
+                    }
+                }
+            }
+        }
+    }
+}
