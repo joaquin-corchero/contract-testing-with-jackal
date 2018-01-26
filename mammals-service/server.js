@@ -7,7 +7,6 @@ const mammals = require('./mammals.json');
 const app = express();
 const port = 8085;
 
-
 app.use(bodyParser.json());
 app.listen(port);
 
