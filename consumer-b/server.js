@@ -4,15 +4,15 @@ var request = require('request');
 var app = express();
 var router = express.Router();
 var port = 8090;
-var dinoServiceUrl = 'http://localhost:8080/api/dinosaurs';
+var dinoServiceUrl = 'http://localhost:8080/api/mammals';
 var tflServiceUrl = 'https://api.tfl.gov.uk/journey/journeyresults/westminster/to/bank';
 
 app.use('/', router);
 app.listen(port);
 
-console.log(`dinosaur-tfl-consumer is listening to port ${port}`);
+console.log(`consumer b is listening to port ${port}`);
 
-router.get('/dinosaurs', function (req, res) {
+router.get('/mammals', function (req, res) {
     request.get(dinoServiceUrl, function (error, response, body) {
         if (error != null) {
             res.send(`There was a problem with the request!: ${error}}`);
@@ -21,15 +21,15 @@ router.get('/dinosaurs', function (req, res) {
 
         var html = `<html>
             <head>
-            <title>The dinos</title>
+            <title>The mammals</title>
             </head>
             <body>
-            <h1>The dinosaurs</h1>
+            <h1>The mammals</h1>
             <ul>
             `;
         JSON.parse(body).forEach(dino => {
             html += `<li>
-                    <strong>${dino.name}: </strong> from the ${dino.era} was a ${dino.diet}.
+                    <strong>${m.familyName}: </strong> <a href="${m.speciesUrl}" target="_blank">${familyCommonName}</a>.
                 </li>`
         });
 
@@ -39,7 +39,7 @@ router.get('/dinosaurs', function (req, res) {
     });
 });
 
-router.post('/dinosaurs', function (req, res) {
+router.post('/mammals', function (req, res) {
     var postData = { name: 'Something else', era: 'Triasic', diet: 'Vegetarian' };
     var options = {
         url: dinoServiceUrl,
@@ -55,17 +55,17 @@ router.post('/dinosaurs', function (req, res) {
         }
 
         if (response.statusCode != "201") {
-            res.send(`The dinosaur wasn't created ${response.body}`);
+            res.send(`The mammal wasn't created ${response.body}`);
             return;
         }
-        
+
         var html = `<html>
             <head>
-            <title>The dinos</title>
+            <title>The mammals</title>
             </head>
             <body>
-            <h1>The dinosaurs</h1>
-            <strong>Dinosaur created!</strong>
+            <h1>The mammals</h1>
+            <strong>mammal created!</strong>
            </body></html>`;
 
         res.send(html);
