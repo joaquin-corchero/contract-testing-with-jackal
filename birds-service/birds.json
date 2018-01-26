@@ -4,7 +4,7 @@
         "classCommonName": "birds",
         "familyName": "Acanthizidae",
         "familyCommonName": "Acanthizidae",
-        "familyRank": "980650",
+        "id": "980650",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=acanthizidae"
     },
     {
@@ -12,7 +12,7 @@
         "classCommonName": "birds",
         "familyName": "Accipitridae",
         "familyCommonName": "kites, goshawks, eagles and harriers",
-        "familyRank": "980300",
+        "id": "980300",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=accipitridae"
     },
     {
@@ -20,7 +20,7 @@
         "classCommonName": "birds",
         "familyName": "Acrocephalidae",
         "familyCommonName": "Acrocephalidae",
-        "familyRank": "980860",
+        "id": "980860",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=acrocephalidae"
     },
     {
@@ -28,7 +28,7 @@
         "classCommonName": "birds",
         "familyName": "Aegothelidae",
         "familyCommonName": "owlet nightjars",
-        "familyRank": "980150",
+        "id": "980150",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=aegothelidae"
     },
     {
@@ -36,7 +36,7 @@
         "classCommonName": "birds",
         "familyName": "Alaudidae",
         "familyCommonName": "old world larks",
-        "familyRank": "980840",
+        "id": "980840",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=alaudidae"
     },
     {
@@ -44,7 +44,7 @@
         "classCommonName": "birds",
         "familyName": "Alcedinidae",
         "familyCommonName": "kingfishers",
-        "familyRank": "980540",
+        "id": "980540",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=alcedinidae"
     },
     {
@@ -52,7 +52,7 @@
         "classCommonName": "birds",
         "familyName": "Anatidae",
         "familyCommonName": "geese, swans and ducks",
-        "familyRank": "980070",
+        "id": "980070",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=anatidae"
     },
     {
@@ -60,7 +60,7 @@
         "classCommonName": "birds",
         "familyName": "Anhingidae",
         "familyCommonName": "darters",
-        "familyRank": "980240",
+        "id": "980240",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=anhingidae"
     },
     {
@@ -68,7 +68,7 @@
         "classCommonName": "birds",
         "familyName": "Anseranatidae",
         "familyCommonName": "magpie-goose",
-        "familyRank": "980060",
+        "id": "980060",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=anseranatidae"
     },
     {
@@ -76,7 +76,7 @@
         "classCommonName": "birds",
         "familyName": "Apodidae",
         "familyCommonName": "swifts and swiftlets",
-        "familyRank": "980160",
+        "id": "980160",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=apodidae"
     },
     {
@@ -84,7 +84,7 @@
         "classCommonName": "birds",
         "familyName": "Ardeidae",
         "familyCommonName": "herons, egrets and bitterns",
-        "familyRank": "980280",
+        "id": "980280",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=ardeidae"
     },
     {
@@ -92,7 +92,7 @@
         "classCommonName": "birds",
         "familyName": "Artamidae",
         "familyCommonName": "wood swallows",
-        "familyRank": "980750",
+        "id": "980750",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=artamidae"
     },
     {
@@ -100,7 +100,7 @@
         "classCommonName": "birds",
         "familyName": "Atrichornithidae",
         "familyCommonName": "scrubbirds",
-        "familyRank": "980600",
+        "id": "980600",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=atrichornithidae"
     },
     {
@@ -108,7 +108,7 @@
         "classCommonName": "birds",
         "familyName": "Burhinidae",
         "familyCommonName": "thick-knees",
-        "familyRank": "980360",
+        "id": "980360",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=burhinidae"
     },
     {
@@ -116,7 +116,7 @@
         "classCommonName": "birds",
         "familyName": "Cacatuidae",
         "familyCommonName": "cockatoos",
-        "familyRank": "980490",
+        "id": "980490",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=cacatuidae"
     },
     {
@@ -124,7 +124,7 @@
         "classCommonName": "birds",
         "familyName": "Campephagidae",
         "familyCommonName": "trillers and cuckoo-shrikes",
-        "familyRank": "980720",
+        "id": "980720",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=campephagidae"
     },
     {
@@ -132,7 +132,7 @@
         "classCommonName": "birds",
         "familyName": "Caprimulgidae",
         "familyCommonName": "nightjars",
-        "familyRank": "980140",
+        "id": "980140",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=caprimulgidae"
     },
     {
@@ -140,7 +140,7 @@
         "classCommonName": "birds",
         "familyName": "Casuariidae",
         "familyCommonName": "cassowaries and emus",
-        "familyRank": "980010",
+        "id": "980010",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=casuariidae"
     },
     {
@@ -148,7 +148,7 @@
         "classCommonName": "birds",
         "familyName": "Centropodidae",
         "familyCommonName": "pheasant coucal",
-        "familyRank": "980400",
+        "id": "980400",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=centropodidae"
     },
     {
@@ -156,7 +156,7 @@
         "classCommonName": "birds",
         "familyName": "Charadriidae",
         "familyCommonName": "lapwings, plovers and dotterels",
-        "familyRank": "980390",
+        "id": "980390",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=charadriidae"
     },
     {
@@ -164,7 +164,7 @@
         "classCommonName": "birds",
         "familyName": "Ciconiidae",
         "familyCommonName": "storks",
-        "familyRank": "980270",
+        "id": "980270",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=ciconiidae"
     },
     {
@@ -172,7 +172,7 @@
         "classCommonName": "birds",
         "familyName": "Cinclosomatidae",
         "familyCommonName": "whipbirds, wedgebills and quail-thrushes",
-        "familyRank": "980620",
+        "id": "980620",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=cinclosomatidae"
     },
     {
@@ -180,7 +180,7 @@
         "classCommonName": "birds",
         "familyName": "Cisticolidae",
         "familyCommonName": "Cisticolidae",
-        "familyRank": "980850",
+        "id": "980850",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=cisticolidae"
     },
     {
@@ -188,7 +188,7 @@
         "classCommonName": "birds",
         "familyName": "Climacteridae",
         "familyCommonName": "Australian tree-creepers",
-        "familyRank": "980610",
+        "id": "980610",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=climacteridae"
     },
     {
@@ -196,7 +196,7 @@
         "classCommonName": "birds",
         "familyName": "Columbidae",
         "familyCommonName": "pigeons and doves",
-        "familyRank": "980110",
+        "id": "980110",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=columbidae"
     },
     {
@@ -204,7 +204,7 @@
         "classCommonName": "birds",
         "familyName": "Coraciidae",
         "familyCommonName": "rollers",
-        "familyRank": "980570",
+        "id": "980570",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=coraciidae"
     },
     {
@@ -212,7 +212,7 @@
         "classCommonName": "birds",
         "familyName": "Corcoracidae",
         "familyCommonName": "Australian mud-nesters",
-        "familyRank": "980810",
+        "id": "980810",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=corcoracidae"
     },
     {
@@ -220,7 +220,7 @@
         "classCommonName": "birds",
         "familyName": "Corvidae",
         "familyCommonName": "crows and ravens",
-        "familyRank": "980790",
+        "id": "980790",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=corvidae"
     },
     {
@@ -228,7 +228,7 @@
         "classCommonName": "birds",
         "familyName": "Cuculidae",
         "familyCommonName": "parasitic cuckoos and coucals",
-        "familyRank": "980510",
+        "id": "980510",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=cuculidae"
     },
     {
@@ -236,7 +236,7 @@
         "classCommonName": "birds",
         "familyName": "Dasyornithidae",
         "familyCommonName": "Dasyornithidae",
-        "familyRank": "980640",
+        "id": "980640",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=dasyornithidae"
     },
     {
@@ -244,7 +244,7 @@
         "classCommonName": "birds",
         "familyName": "Dicaeidae",
         "familyCommonName": "flowerpeckers",
-        "familyRank": "980780",
+        "id": "980780",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=dicaeidae"
     },
     {
@@ -252,7 +252,7 @@
         "classCommonName": "birds",
         "familyName": "Dicruridae",
         "familyCommonName": "drongo, fantail, flycatcher, magpie-lark, monarchs",
-        "familyRank": "980760",
+        "id": "980760",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=dicruridae"
     },
     {
@@ -260,7 +260,7 @@
         "classCommonName": "birds",
         "familyName": "Diomedeidae",
         "familyCommonName": "albatrosses",
-        "familyRank": "980190",
+        "id": "980190",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=diomedeidae"
     },
     {
@@ -268,7 +268,7 @@
         "classCommonName": "birds",
         "familyName": "Emberizidae",
         "familyCommonName": "buntings and allies",
-        "familyRank": "981000",
+        "id": "981000",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=emberizidae"
     },
     {
@@ -276,7 +276,7 @@
         "classCommonName": "birds",
         "familyName": "Estrildidae",
         "familyCommonName": "Estrildidae",
-        "familyRank": "980960",
+        "id": "980960",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=estrildidae"
     },
     {
@@ -284,7 +284,7 @@
         "classCommonName": "birds",
         "familyName": "Eurostopodidae",
         "familyCommonName": "Eurostopodidae",
-        "familyRank": "980130",
+        "id": "980130",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=eurostopodidae"
     },
     {
@@ -292,7 +292,7 @@
         "classCommonName": "birds",
         "familyName": "Falconidae",
         "familyCommonName": "falcons",
-        "familyRank": "980310",
+        "id": "980310",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=falconidae"
     },
     {
@@ -300,7 +300,7 @@
         "classCommonName": "birds",
         "familyName": "Fregatidae",
         "familyCommonName": "frigatebirds",
-        "familyRank": "980220",
+        "id": "980220",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=fregatidae"
     },
     {
@@ -308,7 +308,7 @@
         "classCommonName": "birds",
         "familyName": "Fringillidae",
         "familyCommonName": "true finches",
-        "familyRank": "980990",
+        "id": "980990",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=fringillidae"
     },
     {
@@ -316,7 +316,7 @@
         "classCommonName": "birds",
         "familyName": "Glareolidae",
         "familyCommonName": "pratincoles",
-        "familyRank": "980450",
+        "id": "980450",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=glareolidae"
     },
     {
@@ -324,7 +324,7 @@
         "classCommonName": "birds",
         "familyName": "Gruidae",
         "familyCommonName": "cranes",
-        "familyRank": "980320",
+        "id": "980320",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=gruidae"
     },
     {
@@ -332,7 +332,7 @@
         "classCommonName": "birds",
         "familyName": "Haematopodidae",
         "familyCommonName": "oystercatchers",
-        "familyRank": "980370",
+        "id": "980370",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=haematopodidae"
     },
     {
@@ -340,7 +340,7 @@
         "classCommonName": "birds",
         "familyName": "Halcyonidae",
         "familyCommonName": "kookaburras and kingfishers",
-        "familyRank": "980550",
+        "id": "980550",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=halcyonidae"
     },
     {
@@ -348,7 +348,7 @@
         "classCommonName": "birds",
         "familyName": "Hirundinidae",
         "familyCommonName": "swallows and martins",
-        "familyRank": "980900",
+        "id": "980900",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=hirundinidae"
     },
     {
@@ -356,7 +356,7 @@
         "classCommonName": "birds",
         "familyName": "Hydrobatidae",
         "familyCommonName": "storm-petrels",
-        "familyRank": "980170",
+        "id": "980170",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=hydrobatidae"
     },
     {
@@ -364,7 +364,7 @@
         "classCommonName": "birds",
         "familyName": "Jacanidae",
         "familyCommonName": "jacanas",
-        "familyRank": "980410",
+        "id": "980410",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=jacanidae"
     },
     {
@@ -372,7 +372,7 @@
         "classCommonName": "birds",
         "familyName": "Laniidae",
         "familyCommonName": "True Shrikes",
-        "familyRank": "980780",
+        "id": "980780",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=laniidae"
     },
     {
@@ -380,7 +380,7 @@
         "classCommonName": "birds",
         "familyName": "Laridae",
         "familyCommonName": "gulls and terns",
-        "familyRank": "980470",
+        "id": "980470",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=laridae"
     },
     {
@@ -388,7 +388,7 @@
         "classCommonName": "birds",
         "familyName": "Maluridae",
         "familyCommonName": "fairy-wrens",
-        "familyRank": "980630",
+        "id": "980630",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=maluridae"
     },
     {
@@ -396,7 +396,7 @@
         "classCommonName": "birds",
         "familyName": "Megaluridae",
         "familyCommonName": "Megaluridae",
-        "familyRank": "980870",
+        "id": "980870",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=megaluridae"
     },
     {
@@ -404,7 +404,7 @@
         "classCommonName": "birds",
         "familyName": "Megapodiidae",
         "familyCommonName": "mound-builders",
-        "familyRank": "980020",
+        "id": "980020",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=megapodiidae"
     },
     {
@@ -412,7 +412,7 @@
         "classCommonName": "birds",
         "familyName": "Meliphagidae",
         "familyCommonName": "honeyeaters and Australian chats",
-        "familyRank": "980670",
+        "id": "980670",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=meliphagidae"
     },
     {
@@ -420,7 +420,7 @@
         "classCommonName": "birds",
         "familyName": "Menuridae",
         "familyCommonName": "lyrebirds",
-        "familyRank": "980590",
+        "id": "980590",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=menuridae"
     },
     {
@@ -428,7 +428,7 @@
         "classCommonName": "birds",
         "familyName": "Meropidae",
         "familyCommonName": "bee-eaters",
-        "familyRank": "980560",
+        "id": "980560",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=meropidae"
     },
     {
@@ -436,7 +436,7 @@
         "classCommonName": "birds",
         "familyName": "Monarchidae",
         "familyCommonName": "Monarchidae",
-        "familyRank": "980800",
+        "id": "980800",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=monarchidae"
     },
     {
@@ -444,7 +444,7 @@
         "classCommonName": "birds",
         "familyName": "Motacillidae",
         "familyCommonName": "old world pipits and wagtails",
-        "familyRank": "980980",
+        "id": "980980",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=motacillidae"
     },
     {
@@ -452,7 +452,7 @@
         "classCommonName": "birds",
         "familyName": "Muscicapidae",
         "familyCommonName": "old world thrushes",
-        "familyRank": "980920",
+        "id": "980920",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=muscicapidae"
     },
     {
@@ -460,7 +460,7 @@
         "classCommonName": "birds",
         "familyName": "Nectariniidae",
         "familyCommonName": "sunbirds",
-        "familyRank": "980950",
+        "id": "980950",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=nectariniidae"
     },
     {
@@ -468,7 +468,7 @@
         "classCommonName": "birds",
         "familyName": "Neosittidae",
         "familyCommonName": "sittelas",
-        "familyRank": "980710",
+        "id": "980710",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=neosittidae"
     },
     {
@@ -476,7 +476,7 @@
         "classCommonName": "birds",
         "familyName": "Numididae",
         "familyCommonName": "Numididae",
-        "familyRank": "980030",
+        "id": "980030",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=numididae"
     },
     {
@@ -484,7 +484,7 @@
         "classCommonName": "birds",
         "familyName": "Oceanitidae",
         "familyCommonName": "Oceanitidae",
-        "familyRank": "980180",
+        "id": "980180",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=oceanitidae"
     },
     {
@@ -492,7 +492,7 @@
         "classCommonName": "birds",
         "familyName": "Oriolidae",
         "familyCommonName": "orioles and figbirds",
-        "familyRank": "980740",
+        "id": "980740",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=oriolidae"
     },
     {
@@ -500,7 +500,7 @@
         "classCommonName": "birds",
         "familyName": "Orthonychidae",
         "familyCommonName": "chowchillas and logrunners",
-        "familyRank": "980690",
+        "id": "980690",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=orthonychidae"
     },
     {
@@ -508,7 +508,7 @@
         "classCommonName": "birds",
         "familyName": "Otididae",
         "familyCommonName": "bustards",
-        "familyRank": "980340",
+        "id": "980340",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=otididae"
     },
     {
@@ -516,7 +516,7 @@
         "classCommonName": "birds",
         "familyName": "Pachycephalidae",
         "familyCommonName": "crested shrike-tit and crested bellbirds",
-        "familyRank": "980730",
+        "id": "980730",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pachycephalidae"
     },
     {
@@ -524,7 +524,7 @@
         "classCommonName": "birds",
         "familyName": "Paradisaeidae",
         "familyCommonName": "Birds of Paradise",
-        "familyRank": "980820",
+        "id": "980820",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=paradisaeidae"
     },
     {
@@ -532,7 +532,7 @@
         "classCommonName": "birds",
         "familyName": "Pardalotidae",
         "familyCommonName": "Pardalotes, Bristlebirds, Scrubwrens, Gerygones an",
-        "familyRank": "980660",
+        "id": "980660",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pardalotidae"
     },
     {
@@ -540,7 +540,7 @@
         "classCommonName": "birds",
         "familyName": "Passeridae",
         "familyCommonName": "Old World Sparrows",
-        "familyRank": "980970",
+        "id": "980970",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=passeridae"
     },
     {
@@ -548,7 +548,7 @@
         "classCommonName": "birds",
         "familyName": "Pedionomidae",
         "familyCommonName": "Plains-wanderer",
-        "familyRank": "980400",
+        "id": "980400",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pedionomidae"
     },
     {
@@ -556,7 +556,7 @@
         "classCommonName": "birds",
         "familyName": "Pelecanidae",
         "familyCommonName": "Pelicans",
-        "familyRank": "980260",
+        "id": "980260",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pelecanidae"
     },
     {
@@ -564,7 +564,7 @@
         "classCommonName": "birds",
         "familyName": "Petroicidae",
         "familyCommonName": "Robins",
-        "familyRank": "980830",
+        "id": "980830",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=petroicidae"
     },
     {
@@ -572,7 +572,7 @@
         "classCommonName": "birds",
         "familyName": "Phaethontidae",
         "familyCommonName": "Tropicbirds",
-        "familyRank": "980080",
+        "id": "980080",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=phaethontidae"
     },
     {
@@ -580,7 +580,7 @@
         "classCommonName": "birds",
         "familyName": "Phalacrocoracidae",
         "familyCommonName": "Corrmorants",
-        "familyRank": "980250",
+        "id": "980250",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=phalacrocoracidae"
     },
     {
@@ -588,7 +588,7 @@
         "classCommonName": "birds",
         "familyName": "Phasianidae",
         "familyCommonName": "Quails and Pheasants",
-        "familyRank": "980050",
+        "id": "980050",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=phasianidae"
     },
     {
@@ -596,7 +596,7 @@
         "classCommonName": "birds",
         "familyName": "Pittidae",
         "familyCommonName": "Pittas",
-        "familyRank": "980580",
+        "id": "980580",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pittidae"
     },
     {
@@ -604,7 +604,7 @@
         "classCommonName": "birds",
         "familyName": "Ploceidae",
         "familyCommonName": "Ploceidae",
-        "familyRank": "989999",
+        "id": "989999",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=ploceidae"
     },
     {
@@ -612,7 +612,7 @@
         "classCommonName": "birds",
         "familyName": "Podargidae",
         "familyCommonName": "Frogmouths",
-        "familyRank": "980120",
+        "id": "980120",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=podargidae"
     },
     {
@@ -620,7 +620,7 @@
         "classCommonName": "birds",
         "familyName": "Podicipedidae",
         "familyCommonName": "Grebes",
-        "familyRank": "980090",
+        "id": "980090",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=podicipedidae"
     },
     {
@@ -628,7 +628,7 @@
         "classCommonName": "birds",
         "familyName": "Pomatostomidae",
         "familyCommonName": "Australo-Papuan Babblers",
-        "familyRank": "980680",
+        "id": "980680",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pomatostomidae"
     },
     {
@@ -636,7 +636,7 @@
         "classCommonName": "birds",
         "familyName": "Procellariidae",
         "familyCommonName": "Petrels and Shearwaters",
-        "familyRank": "980200",
+        "id": "980200",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=procellariidae"
     },
     {
@@ -644,7 +644,7 @@
         "classCommonName": "birds",
         "familyName": "Psittacidae",
         "familyCommonName": "Parrots",
-        "familyRank": "980500",
+        "id": "980500",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=psittacidae"
     },
     {
@@ -652,7 +652,7 @@
         "classCommonName": "birds",
         "familyName": "Psophodidae",
         "familyCommonName": "Psophodidae",
-        "familyRank": "980700",
+        "id": "980700",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=psophodidae"
     },
     {
@@ -660,7 +660,7 @@
         "classCommonName": "birds",
         "familyName": "Ptilonorhynchidae",
         "familyCommonName": "Bowerbirds",
-        "familyRank": "980620",
+        "id": "980620",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=ptilonorhynchidae"
     },
     {
@@ -668,7 +668,7 @@
         "classCommonName": "birds",
         "familyName": "Pycnonotidae",
         "familyCommonName": "Bulbuls",
-        "familyRank": "980910",
+        "id": "980910",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=pycnonotidae"
     },
     {
@@ -676,7 +676,7 @@
         "classCommonName": "birds",
         "familyName": "Rallidae",
         "familyCommonName": "Rails, Crakes, Swamphens and Coots",
-        "familyRank": "980330",
+        "id": "980330",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=rallidae"
     },
     {
@@ -684,7 +684,7 @@
         "classCommonName": "birds",
         "familyName": "Recurvirostridae",
         "familyCommonName": "Stilts and Avocets",
-        "familyRank": "980380",
+        "id": "980380",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=recurvirostridae"
     },
     {
@@ -692,7 +692,7 @@
         "classCommonName": "birds",
         "familyName": "Rhipiduridae",
         "familyCommonName": "Rhipiduridae",
-        "familyRank": "980770",
+        "id": "980770",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=rhipiduridae"
     },
     {
@@ -700,7 +700,7 @@
         "classCommonName": "birds",
         "familyName": "Rostratulidae",
         "familyCommonName": "Painted Snipes",
-        "familyRank": "980420",
+        "id": "980420",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=rostratulidae"
     },
     {
@@ -708,7 +708,7 @@
         "classCommonName": "birds",
         "familyName": "Scolopacidae",
         "familyCommonName": "Curlews, Sandpipers, Snipes and Godwits",
-        "familyRank": "980430",
+        "id": "980430",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=scolopacidae"
     },
     {
@@ -716,7 +716,7 @@
         "classCommonName": "birds",
         "familyName": "Spheniscidae",
         "familyCommonName": "Penguins",
-        "familyRank": "980210",
+        "id": "980210",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=spheniscidae"
     },
     {
@@ -724,7 +724,7 @@
         "classCommonName": "birds",
         "familyName": "Stercorariidae",
         "familyCommonName": "Stercorariidae",
-        "familyRank": "980460",
+        "id": "980460",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=stercorariidae"
     },
     {
@@ -732,7 +732,7 @@
         "classCommonName": "birds",
         "familyName": "Strigidae",
         "familyCommonName": "Hawk Owls",
-        "familyRank": "980520",
+        "id": "980520",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=strigidae"
     },
     {
@@ -740,7 +740,7 @@
         "classCommonName": "birds",
         "familyName": "Struthionidae",
         "familyCommonName": "Ostriches",
-        "familyRank": "980000",
+        "id": "980000",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=struthionidae"
     },
     {
@@ -748,7 +748,7 @@
         "classCommonName": "birds",
         "familyName": "Sturnidae",
         "familyCommonName": "Starlings and Mynahs",
-        "familyRank": "980940",
+        "id": "980940",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=sturnidae"
     },
     {
@@ -756,7 +756,7 @@
         "classCommonName": "birds",
         "familyName": "Sulidae",
         "familyCommonName": "Gannets and Boobies",
-        "familyRank": "980230",
+        "id": "980230",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=sulidae"
     },
     {
@@ -764,7 +764,7 @@
         "classCommonName": "birds",
         "familyName": "Sylviidae",
         "familyCommonName": "Old World Warblers",
-        "familyRank": "980810",
+        "id": "980810",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=sylviidae"
     },
     {
@@ -772,7 +772,7 @@
         "classCommonName": "birds",
         "familyName": "Threskiornithidae",
         "familyCommonName": "Ibises and Spoonbills",
-        "familyRank": "980290",
+        "id": "980290",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=threskiornithidae"
     },
     {
@@ -780,7 +780,7 @@
         "classCommonName": "birds",
         "familyName": "Timaliidae",
         "familyCommonName": "Timaliidae",
-        "familyRank": "980880",
+        "id": "980880",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=timaliidae"
     },
     {
@@ -788,7 +788,7 @@
         "classCommonName": "birds",
         "familyName": "Turdidae",
         "familyCommonName": "Turdidae",
-        "familyRank": "980930",
+        "id": "980930",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=turdidae"
     },
     {
@@ -796,7 +796,7 @@
         "classCommonName": "birds",
         "familyName": "Turnicidae",
         "familyCommonName": "Button-quails",
-        "familyRank": "980440",
+        "id": "980440",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=turnicidae"
     },
     {
@@ -804,7 +804,7 @@
         "classCommonName": "birds",
         "familyName": "Tytonidae",
         "familyCommonName": "Barn Owls",
-        "familyRank": "980530",
+        "id": "980530",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=tytonidae"
     },
     {
@@ -812,7 +812,7 @@
         "classCommonName": "birds",
         "familyName": "Zosteropidae",
         "familyCommonName": "White-eyes",
-        "familyRank": "980820",
+        "id": "980820",
         "speciesUrl": "http://environment.ehp.qld.gov.au/species/?op=getspecies&family=zosteropidae"
     }
 ]
