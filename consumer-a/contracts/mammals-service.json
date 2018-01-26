@@ -1,8 +1,8 @@
 {
-    "dinosaur-mammals-consumer": {
+    "consumer-a": {
         "mammals-service": {
             "get mammals": {
-                "Mammals are returned": {
+                "All the mammals are returned": {
                     "request": {
                         "baseUrl": "http://localhost:8085",
                         "path": "/api/mammals",
@@ -13,10 +13,10 @@
                         "statusCode": 200,
                         "body": [
                             {
+                                "familyName": "Joi.string()",
+                                "familyCommonName": "Joi.string()",
                                 "id": "Joi.number().integer()",
-                                "name": "Joi.string()",
-                                "extinct": "Joi.boolean()",
-                                "diet": "Joi.string()"
+                                "speciesUrl": "Joi.string()"
                             }
                         ]
                     }
