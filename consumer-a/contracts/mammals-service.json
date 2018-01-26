@@ -21,6 +21,60 @@
                         ]
                     }
                 }
+            },
+            "can create a mammal": {
+                "before": [
+                    {
+                        "name": "get number of existing mammals",
+                        "request": {
+                            "baseUrl": "http://localhost:8085",
+                            "path": "/api/mammals",
+                            "method": "GET",
+                            "timeout": 1000
+                        },
+                        "response": {
+                            "statusCode": 200
+                        },
+                        "mammalId": "$.body.length + 1"
+                    }
+                ],
+                "request": {
+                    "baseUrl": "http://localhost:8085",
+                    "path": "/api/mammals",
+                    "method": "POST",
+                    "timeout": 1000,
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": {
+                        "familyName": "Pepero",
+                        "familyCommonName": "Pepero animalis",
+                        "speciesUrl": "http://google.com"
+                    }
+                },
+                "response": {
+                    "statusCode": 201,
+                    "body": "Joi.string().equal('Created')"
+                },
+                "after": [
+                    {
+                        "name": "check for the mammal",
+                        "request": {
+                            "baseUrl": "http://localhost:8085",
+                            "path": "/api/mammals/5",
+                            "method": "GET",
+                            "timeout": 1000
+                        },
+                        "response": {
+                            "statusCode": "200",
+                            "body": {
+                                "familyName": "Joi.string()",
+                                "familyCommonName": "Joi.string()",
+                                "speciesUrl": "Joi.string()"
+                            }
+                        }
+                    }
+                ]
             }
         }
     }
