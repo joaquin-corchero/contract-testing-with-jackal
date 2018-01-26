@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const birds = require('./birds.json');
 
 const app = express();
-const port = 8085;
+const port = 8090;
 
 
 app.use(bodyParser.json());
@@ -24,12 +24,19 @@ app.get('/api/birds/', function (req, res) {
 });
 
 app.post('/api/birds', function (req, res) {
-    const { familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl } = req.body;
-    if (!name || !diet || (extinct !== true && extinct !== false)) {
+    const { className: className, classCommonName: classCommonName, familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl } = req.body;
+    if (!className || !classCommonName || !familyName || !familyCommonName || !speciesUrl) {
         res.sendStatus(400);
         return;
     }
 
-    birds.push({familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl });
+    birds.push({
+        className: className, 
+        classCommonName: classCommonName, 
+        familyName: familyName,
+        familyCommonName: familyCommonName,
+        speciesUrl: speciesUrl,
+        id: birds.length
+    });
     res.sendStatus(201);
 });
