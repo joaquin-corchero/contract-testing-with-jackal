@@ -2,7 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const mammals = require('./mammals.json');
+let mammals = require('./mammals.json');
 
 const app = express();
 const port = 8085;
@@ -19,10 +19,20 @@ const getPaged = function (pageNumber, pageSize) {
     };
 };
 
+const get = function (id) {
+    return mammals.find(m => m.id === id);
+};
+
+const isString = function(input){
+    return typeof input === 'string';
+};
+
 app.get('/api/mammals/:id', function (req, res, next) {
-    console.log('GETS HERE');
-    const result = mammals[req.params.id * 1];
-    res.json(result);
+    const result = get(req.params.id);
+    if(!result){
+        return res.sendStatus(404);
+    }
+    return res.status(200).send(result);
 });
 
 //localhost:8085/api/mammals/0/5 v1
@@ -31,19 +41,32 @@ app.get('/api/mammals/:pageNumber?/:pageSize?', function (req, res) {
     if (version == "1") {
         const pageNumber = req.params.pageNumber * 1;
         const pageSize = req.params.pageSize * 1;
-        res.json(getPaged(pageNumber, pageSize));
-        return;
+        return res.status(200).send(getPaged(pageNumber, pageSize));
     }
-    res.json(mammals);
+    return res.status(200).send(mammals);
 });
 
 app.post('/api/mammals', function (req, res) {
-    const { familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl } = req.body;
-    if (!familyName || !familyCommonName || !speciesUrl) {
-        res.sendStatus(400);
-        return;
+    const {id: id, familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl } = req.body;
+    if (!isString(id) || !isString(familyName) || !isString(familyCommonName) || !isString(speciesUrl)) {
+        return res.status(400).send({ message: "Wrong parameters"});
     }
 
-    mammals.push({ id: mammals.length, familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl });
-    res.sendStatus(201);
+    if(get(id)){
+        return res.status(400).send({ message: "The id already exists"});
+    }
+
+    const mammal = {id: id, familyName: familyName, familyCommonName: familyCommonName, speciesUrl: speciesUrl };
+    mammals.push(mammal);
+    return res.status(201).send(mammal);
+});
+
+app.delete('/api/mammals/:id', function(req, res){
+    var toDelete = get(req.params.id);
+    if(!toDelete){
+        return res.sendStatus(404);
+    }
+
+    mammals = mammals.filter(m=> m.id != req.params.id);
+    return res.sendStatus(204);
 });
