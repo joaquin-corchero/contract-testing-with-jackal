@@ -1,0 +1,263 @@
+{
+    "consumer-a": {
+        "birds-service": {
+            "get birds": {
+                "All birds are returned": {
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds",
+                        "method": "GET",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 200,
+                        "body": [
+                            {
+                                "familyName": "Joi.string()",
+                                "familyCommonName": "Joi.string()",
+                                "id": "Joi.string()",
+                                "speciesUrl": "Joi.string()"
+                            }
+                        ]
+                    }
+                }
+            },
+            "get bird": {
+                "Bird is returned": {
+                    "before": [
+                        {
+                            "name": "Create a test bird",
+                            "request": {
+                                "baseUrl": "http://localhost:8090",
+                                "path": "/api/birds",
+                                "method": "POST",
+                                "timeout": 1000,
+                                "headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "body": {
+                                    "id": "TestToFindIt666",
+                                    "familyName": "familyName",
+                                    "familyCommonName": "familyCommonName",
+                                    "speciesUrl": "speciesUrl"
+                                }
+                            },
+                            "response": {
+                                "statusCode": 201
+                            }
+                        }
+                    ],
+                    "after": [
+                        {
+                            "name": "Delete the bird",
+                            "request": {
+                                "baseUrl": "http://localhost:8090",
+                                "path": "/api/birds/TestToFindIt666",
+                                "method": "DELETE",
+                                "timeout": 1000
+                            },
+                            "response": {
+                                "statusCode": 204
+                            }
+                        }
+                    ],
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds/TestToFindIt666",
+                        "method": "GET",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 200,
+                        "body": {
+                            "id": "Joi.string().equal('TestToFindIt666')",
+                            "familyName": "Joi.string().equal('familyName')",
+                            "familyCommonName": "Joi.string().equal('familyCommonName')",
+                            "speciesUrl": "Joi.string().equal('speciesUrl')"
+                        }
+                    }
+                },
+                "The bird not existing is not found":
+                {
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds/SomethingNotGood",
+                        "method": "GET",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 404
+                    }
+                }
+            },
+            "creating a bird": {
+                "A bird can be created": {
+                    "after": [
+                        {
+                            "name": "Delete the bird",
+                            "request": {
+                                "baseUrl": "http://localhost:8090",
+                                "path": "/api/birds/birdToMakeDissapear",
+                                "method": "DELETE",
+                                "timeout": 1000
+                            },
+                            "response": {
+                                "statusCode": 204
+                            }
+                        }
+                    ],
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "id": "birdToMakeDissapear",
+                            "familyName": "Pepero",
+                            "familyCommonName": "Pepero animalis",
+                            "speciesUrl": "http://google.com"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 201,
+                        "body": {
+                            "id":"Joi.string().equal('birdToMakeDissapear')",
+                            "familyName":"Joi.string().equal('Pepero')",
+                            "familyCommonName":"Joi.string().equal('Pepero animalis')",
+                            "speciesUrl":"Joi.string().equal('http://google.com')"
+                        }
+                    }
+                },
+                "Fields must exist": {
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "id_": "birdToMakeDissapear",
+                            "familyName_": "Pepero",
+                            "familyCommonName_": "Pepero animalis",
+                            "speciesUrl_": "http://google.com"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 400,
+                        "body": { "message": "Joi.string().equal('Wrong parameters')"}
+                    }
+                },
+                "Duplicated Ids fail": {
+                    "before": [
+                        {
+                            "name": "Create a test bird",
+                            "request": {
+                                "baseUrl": "http://localhost:8090",
+                                "path": "/api/birds",
+                                "method": "POST",
+                                "timeout": 1000,
+                                "headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "body": {
+                                    "id": "birdToDuplicate",
+                                    "familyName": "familyName",
+                                    "familyCommonName": "familyCommonName",
+                                    "speciesUrl": "speciesUrl"
+                                }
+                            },
+                            "response": {
+                                "statusCode": 201
+                            }
+                        }
+                    ],
+                    "after": [
+                        {
+                            "name": "Delete the bird",
+                            "request": {
+                                "baseUrl": "http://localhost:8090",
+                                "path": "/api/birds/birdToDuplicate",
+                                "method": "DELETE",
+                                "timeout": 1000
+                            },
+                            "response": {
+                                "statusCode": 204
+                            }
+                        }
+                    ],
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "id": "birdToDuplicate",
+                            "familyName": "Pepero",
+                            "familyCommonName": "Pepero animalis",
+                            "speciesUrl": "http://google.com"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 400,
+                        "body": { "message": "Joi.string().equal('The id already exists')"}
+                    }
+                }
+            },
+            "deleting a bird": {
+                "An existing bird can be deleted": {
+                    "before": [
+                        {
+                            "name": "Create a test bird",
+                            "request": {
+                                "baseUrl": "http://localhost:8090",
+                                "path": "/api/birds",
+                                "method": "POST",
+                                "timeout": 1000,
+                                "headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "body": {
+                                    "id": "birdToDelete",
+                                    "familyName": "familyName",
+                                    "familyCommonName": "familyCommonName",
+                                    "speciesUrl": "speciesUrl"
+                                }
+                            },
+                            "response": {
+                                "statusCode": 201
+                            }
+                        }
+                    ],
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds/birdToDelete",
+                        "method": "DELETE",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 204
+                    }
+                },
+                "No existing bird can't be deleted":{
+                    "request": {
+                        "baseUrl": "http://localhost:8090",
+                        "path": "/api/birds/somethingThatDoesNotExist",
+                        "method": "DELETE",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 404
+                    }
+                }
+            }
+        }
+    }
+}
