@@ -245,6 +245,17 @@
                     "response": {
                         "statusCode": 204
                     }
+                },
+                "No existing mammal can't be deleted":{
+                    "request": {
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals/somethingThatDoesNotExist",
+                        "method": "DELETE",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 404
+                    }
                 }
             }
         }
