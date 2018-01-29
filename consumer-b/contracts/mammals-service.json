@@ -27,46 +27,6 @@
                         }
                     }
                 }
-            },
-            "create mammal": {
-                "A mammal can be created": {
-                    "request": {
-                        "baseUrl": "http://localhost:8085",
-                        "path": "/api/mammals",
-                        "method": "POST",
-                        "timeout": 1000,
-                        "headers": {
-                            "Content-Type": "application/json"
-                        },
-                        "body": {
-                            "familyName": "Pepero",
-                            "familyCommonName": "Pepero animalis",
-                            "speciesUrl": "http://google.com"
-                        }
-                    },
-                    "response": {
-                        "statusCode": 201,
-                        "body": "Joi.string().equal('Created')"
-                    }
-                },
-                "Wrong object won't create mammal": {
-                    "request": {
-                        "baseUrl": "http://localhost:8085",
-                        "path": "/api/mammals",
-                        "method": "POST",
-                        "timeout": 1000,
-                        "headers": {
-                            "Content-Type": "application/json"
-                        },
-                        "body": {
-                            "something": "Pepero"
-                        }
-                    },
-                    "response": {
-                        "statusCode": 400,
-                        "body": "Joi.string().equal('Bad Request')"
-                    }
-                }
             }
         }
     }

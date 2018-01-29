@@ -2,10 +2,10 @@
     "consumer-b": {
         "birds-service": {
             "get birds": {
-                "birds are returned": {
+                "birds are returned paginated for v1": {
                     "request": {
                         "baseUrl": "http://localhost:8090",
-                        "path": "/api/birds",
+                        "path": "/api/birds/0/5",
                         "method": "GET",
                         "timeout": 1000,
                         "headers": {
@@ -14,58 +14,17 @@
                     },
                     "response": {
                         "statusCode": 200,
-                        "body": [
-                            {
-                                "className": "Joi.string()",
-                                "classCommonName": "Joi.string()",
-                                "familyName": "Joi.string()",
-                                "familyCommonName": "Joi.string()",
-                                "id": "Joi.number().integer()",
-                                "speciesUrl": "Joi.string()"
-                            }
-                        ]
-                    }
-                }
-            },
-            "create bird": {
-                "A bird can be created": {
-                    "request": {
-                        "baseUrl": "http://localhost:8090",
-                        "path": "/api/birds",
-                        "method": "POST",
-                        "timeout": 1000,
-                        "headers": {
-                            "Content-Type": "application/json"
-                        },
                         "body": {
-                            "className": "Pepero class",
-                            "classCommonName": "Pepero is a common name",
-                            "familyName": "Pepero",
-                            "familyCommonName": "Pepero animalis",
-                            "speciesUrl": "http://google.com"
+                            "totalNumber": "Joi.number().integer()",
+                            "data": [
+                                {
+                                    "familyName": "Joi.string()",
+                                    "familyCommonName": "Joi.string()",
+                                    "id": "Joi.string()",
+                                    "speciesUrl": "Joi.string()"
+                                }
+                            ]
                         }
-                    },
-                    "response": {
-                        "statusCode": 201,
-                        "body": "Joi.string().equal('Created')"
-                    }
-                },
-                "Wrong object won't create bird": {
-                    "request": {
-                        "baseUrl": "http://localhost:8090",
-                        "path": "/api/birds",
-                        "method": "POST",
-                        "timeout": 1000,
-                        "headers": {
-                            "Content-Type": "application/json"
-                        },
-                        "body": {
-                            "something": "Pepero"
-                        }
-                    },
-                    "response": {
-                        "statusCode": 400,
-                        "body": "Joi.string().equal('Bad Request')"
                     }
                 }
             }
