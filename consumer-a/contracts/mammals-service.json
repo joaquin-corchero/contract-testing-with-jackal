@@ -2,7 +2,7 @@
     "consumer-a": {
         "mammals-service": {
             "get mammals": {
-                "All the mammals are returned": {
+                "All mammals are returned": {
                     "request": {
                         "baseUrl": "http://localhost:8085",
                         "path": "/api/mammals",
@@ -150,6 +150,100 @@
                     "response": {
                         "statusCode": 400,
                         "body": { "message": "Joi.string().equal('Wrong parameters')"}
+                    }
+                },
+                "Duplicated Ids fail": {
+                    "before": [
+                        {
+                            "name": "Create a test mammal",
+                            "request": {
+                                "baseUrl": "http://localhost:8085",
+                                "path": "/api/mammals",
+                                "method": "POST",
+                                "timeout": 1000,
+                                "headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "body": {
+                                    "id": "mammalToDuplicate",
+                                    "familyName": "familyName",
+                                    "familyCommonName": "familyCommonName",
+                                    "speciesUrl": "speciesUrl"
+                                }
+                            },
+                            "response": {
+                                "statusCode": 201
+                            }
+                        }
+                    ],
+                    "after": [
+                        {
+                            "name": "Delete the mammal",
+                            "request": {
+                                "baseUrl": "http://localhost:8085",
+                                "path": "/api/mammals/mammalToDuplicate",
+                                "method": "DELETE",
+                                "timeout": 1000
+                            },
+                            "response": {
+                                "statusCode": 204
+                            }
+                        }
+                    ],
+                    "request": {
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals",
+                        "method": "POST",
+                        "timeout": 1000,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": {
+                            "id": "mammalToDuplicate",
+                            "familyName": "Pepero",
+                            "familyCommonName": "Pepero animalis",
+                            "speciesUrl": "http://google.com"
+                        }
+                    },
+                    "response": {
+                        "statusCode": 400,
+                        "body": { "message": "Joi.string().equal('The id already exists')"}
+                    }
+                }
+            },
+            "deleting a mammal": {
+                "An existing mammal can be deleted": {
+                    "before": [
+                        {
+                            "name": "Create a test mammal",
+                            "request": {
+                                "baseUrl": "http://localhost:8085",
+                                "path": "/api/mammals",
+                                "method": "POST",
+                                "timeout": 1000,
+                                "headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "body": {
+                                    "id": "mammalToDelete",
+                                    "familyName": "familyName",
+                                    "familyCommonName": "familyCommonName",
+                                    "speciesUrl": "speciesUrl"
+                                }
+                            },
+                            "response": {
+                                "statusCode": 201
+                            }
+                        }
+                    ],
+                    "request": {
+                        "baseUrl": "http://localhost:8085",
+                        "path": "/api/mammals/mammalToDelete",
+                        "method": "DELETE",
+                        "timeout": 1000
+                    },
+                    "response": {
+                        "statusCode": 204
                     }
                 }
             }
