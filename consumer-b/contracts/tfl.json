@@ -7,7 +7,7 @@
                         "baseUrl": "https://api.tfl.gov.uk",
                         "path": "/journey/journeyresults/westminster/to/bank",
                         "method": "GET",
-                        "timeout": 5000,
+                        "timeout": 7000,
                         "headers": {
                             "Header-Name": "some header that is sent"
                         }
