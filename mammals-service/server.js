@@ -68,5 +68,5 @@ app.delete('/api/mammals/:id', function(req, res){
     }
 
     mammals = mammals.filter(m=> m.id != req.params.id);
-    return res.sendStatus(204);
+    return res.sendStatus(200);
 });

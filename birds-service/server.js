@@ -68,5 +68,5 @@ app.delete('/api/birds/:id', function(req, res){
     }
 
     birds = birds.filter(m=> m.id != req.params.id);
-    return res.sendStatus(204);
+    return res.sendStatus(200);
 });
