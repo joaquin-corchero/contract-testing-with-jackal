@@ -36,7 +36,7 @@
                                     "Content-Type": "application/json"
                                 },
                                 "body": {
-                                    "id": "TestToFindIt666",
+                                    "id": "<%= unique_id %>",
                                     "familyName": "familyName",
                                     "familyCommonName": "familyCommonName",
                                     "speciesUrl": "speciesUrl"
@@ -44,6 +44,9 @@
                             },
                             "response": {
                                 "statusCode": 201
+                            },
+                            "variables": {
+                                "userId": "$.body.id"
                             }
                         }
                     ],
@@ -52,7 +55,7 @@
                             "name": "Delete the mammal",
                             "request": {
                                 "baseUrl": "http://localhost:8085",
-                                "path": "/api/mammals/TestToFindIt666",
+                                "path": "/api/mammals/<%= userId %>",
                                 "method": "DELETE",
                                 "timeout": 1000
                             },
@@ -63,22 +66,21 @@
                     ],
                     "request": {
                         "baseUrl": "http://localhost:8085",
-                        "path": "/api/mammals/TestToFindIt666",
+                        "path": "/api/mammals/<%= userId %>",
                         "method": "GET",
                         "timeout": 1000
                     },
                     "response": {
                         "statusCode": 200,
                         "body": {
-                            "id": "Joi.string().equal('TestToFindIt666')",
+                            "id": "Joi.string()",
                             "familyName": "Joi.string().equal('familyName')",
                             "familyCommonName": "Joi.string().equal('familyCommonName')",
                             "speciesUrl": "Joi.string().equal('speciesUrl')"
                         }
                     }
                 },
-                "The mammal not existing is not found":
-                {
+                "The mammal not existing is not found": {
                     "request": {
                         "baseUrl": "http://localhost:8085",
                         "path": "/api/mammals/SomethingNotGood",
@@ -124,10 +126,10 @@
                     "response": {
                         "statusCode": 201,
                         "body": {
-                            "id":"Joi.string().equal('mammalToMakeDissapear')",
-                            "familyName":"Joi.string().equal('Pepero')",
-                            "familyCommonName":"Joi.string().equal('Pepero animalis')",
-                            "speciesUrl":"Joi.string().equal('http://google.com')"
+                            "id": "Joi.string().equal('mammalToMakeDissapear')",
+                            "familyName": "Joi.string().equal('Pepero')",
+                            "familyCommonName": "Joi.string().equal('Pepero animalis')",
+                            "speciesUrl": "Joi.string().equal('http://google.com')"
                         }
                     }
                 },
@@ -149,7 +151,9 @@
                     },
                     "response": {
                         "statusCode": 400,
-                        "body": { "message": "Joi.string().equal('Wrong parameters')"}
+                        "body": {
+                            "message": "Joi.string().equal('Wrong parameters')"
+                        }
                     }
                 },
                 "Duplicated Ids fail": {
@@ -207,7 +211,9 @@
                     },
                     "response": {
                         "statusCode": 400,
-                        "body": { "message": "Joi.string().equal('The id already exists')"}
+                        "body": {
+                            "message": "Joi.string().equal('The id already exists')"
+                        }
                     }
                 }
             },
@@ -246,7 +252,7 @@
                         "statusCode": 204
                     }
                 },
-                "No existing mammal can't be deleted":{
+                "No existing mammal can't be deleted": {
                     "request": {
                         "baseUrl": "http://localhost:8085",
                         "path": "/api/mammals/somethingThatDoesNotExist",
