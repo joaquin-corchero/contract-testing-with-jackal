@@ -57,7 +57,7 @@
                                 "timeout": 1000
                             },
                             "response": {
-                                "statusCode": 204
+                                "statusCode": 200
                             }
                         }
                     ],
@@ -102,7 +102,7 @@
                                 "timeout": 1000
                             },
                             "response": {
-                                "statusCode": 204
+                                "statusCode": 200
                             }
                         }
                     ],
@@ -186,7 +186,7 @@
                                 "timeout": 1000
                             },
                             "response": {
-                                "statusCode": 204
+                                "statusCode": 200
                             }
                         }
                     ],
@@ -243,7 +243,7 @@
                         "timeout": 1000
                     },
                     "response": {
-                        "statusCode": 204
+                        "statusCode": 200
                     }
                 },
                 "No existing bird can't be deleted":{
